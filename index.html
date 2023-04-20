@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://kit.fontawesome.com/fb7ee60f4a.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            Inter: 'Inter, sans-serif',
+            Poppins: 'Poppins, sans-serif'
+          },
+          backgroundImage: {
+            'hero': "url('/img/hero.png')"
+          }
+        }
+      },
+    }
+  </script>
+
+</head>
+<body class="font-Inter bg-hero">
+  
+  <div class="title border-[0.7px] border-slate-400 rounded-lg w-64 h-14 md:w-96 md:h-20 lg:w-[40rem] lg:h-24 mx-auto mt-12 mb-[2rem] md:mb-[4rem] flex justify-center items-center">
+    <h1 class="font-semibold capitalize text-gray-700 text-xl md:text-3xl lg:text-5xl">
+      welcome to my gallery
+    </h1>
+  </div>
+
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-8 gap-2 mb-2">
+      <div class="view-me w-full h-40 md:h-full lg:h-40 bg-slate-200 aspect-video md:col-span-2 md:row-span-2 lg:col-span-3 rounded-lg shadow-lg overflow-hidden group relative hover:scale-95 duration-300 ease-in-out">
+        <div class="w-full h-full bg-[url('./img/1.jpg')] bg-center bg-cover absolute group-hover:scale-125 duration-300 ease-in-out group-hover:rotate-3"></div>
+      </div>
+
+      <div class="view-me w-full h-40 bg-slate-200 aspect-video md:col-span-2 lg:col-span-2 rounded-lg shadow-lg overflow-hidden group relative hover:scale-95 duration-300 ease-in-out">
+        <div class="w-full h-full bg-[url('./img/2.jpg')] bg-center bg-cover absolute group-hover:scale-125 duration-300 ease-in-out group-hover:rotate-3"></div>
+      </div>
+
+      <div class="view-me w-full h-40 bg-slate-200 aspect-video md:col-span-2 lg:col-span-3 rounded-lg shadow-lg overflow-hidden group relative hover:scale-95 duration-300 ease-in-out">
+        <div class="w-full h-full bg-[url('./img/3.jpg')] bg-center bg-cover absolute group-hover:scale-125 duration-300 ease-in-out group-hover:rotate-3"></div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-2 mb-2">
+      <div class="view-me w-full h-40 md:h-56 bg-slate-200 aspect-video md:col-span-2 lg:col-span-3 rounded-lg shadow-lg overflow-hidden group relative hover:scale-95 duration-300 ease-in-out">
+        <div class="w-full h-full bg-[url('./img/4.jpg')] bg-center bg-cover absolute group-hover:scale-125 duration-300 ease-in-out group-hover:rotate-3"></div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-2">
+      <div class="view-me w-full h-40 bg-slate-200 aspect-video rounded-lg shadow-lg overflow-hidden group relative hover:scale-95 duration-300 ease-in-out">
+        <div class="w-full h-full bg-[url('./img/5.jpg')] bg-center bg-cover absolute group-hover:scale-125 duration-300 ease-in-out group-hover:rotate-3"></div>
+      </div>
+
+      <div class="view-me w-full h-40 bg-slate-200 aspect-video rounded-lg shadow-lg overflow-hidden group relative hover:scale-95 duration-300 ease-in-out">
+        <div class="w-full h-full bg-[url('./img/6.jpg')] bg-center bg-cover absolute group-hover:scale-125 duration-300 ease-in-out group-hover:rotate-3"></div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2">
+      <div class="view-me w-full h-40 md:h-full bg-slate-200 aspect-video rounded-lg shadow-lg overflow-hidden group relative hover:scale-95 duration-300 ease-in-out">
+        <div class="w-full h-full bg-[url('./img/7.jpg')] bg-center bg-cover absolute group-hover:scale-125 duration-300 ease-in-out group-hover:rotate-3"></div>
+      </div>
+
+      <div class="view-me w-full h-40 bg-slate-200 aspect-video rounded-lg shadow-lg overflow-hidden group relative hover:scale-95 duration-300 ease-in-out">
+        <div class="w-full h-full bg-[url('./img/8.jpg')] bg-center bg-cover absolute group-hover:scale-125 duration-300 ease-in-out group-hover:rotate-3"></div>
+      </div>
+
+      <div class="view-me w-full h-40 md:h-full lg:h-40 bg-slate-200 aspect-video md:row-span-2 rounded-lg shadow-lg overflow-hidden group relative hover:scale-95 duration-300 ease-in-out">
+        <div class="w-full h-full bg-[url('./img/9.jpg')] bg-center bg-cover absolute group-hover:scale-125 duration-300 ease-in-out group-hover:rotate-3"></div>
+      </div>
+
+      <div class="view-me w-full h-40 bg-slate-200 aspect-video rounded-lg shadow-lg overflow-hidden group relative hover:scale-95 duration-300 ease-in-out">
+        <div class="w-full h-full bg-[url('./img/10.jpg')] bg-center bg-cover absolute group-hover:scale-125 duration-300 ease-in-out group-hover:rotate-3"></div>
+      </div>
+
+      <div class="view-me w-full h-40 bg-slate-200 aspect-video rounded-lg shadow-lg overflow-hidden group relative hover:scale-95 duration-300 ease-in-out">
+        <div class="w-full h-full bg-[url('./img/11.jpg')] bg-center bg-cover absolute group-hover:scale-125 duration-300 ease-in-out group-hover:rotate-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup-container" class="hidden w-screen h-full mb-8 bg-black/50 fixed top-0 flex justify-center items-center">
+    <div class="btn-close w-7 h-7 absolute md:right-0 top-0 mx-10 my-7 md:my-5 z-10 bg-black/30 rounded-full flex justify-center items-center">
+      <i class="fa-solid fa-xmark text-white"></i>
+    </div>
+    <div class="animate__animated animate__fadeInDown popup-main w-[42rem] h-[33rem] flex justify-center items-center">
+      <div class="text-white p-4 md:px-10">
+        <i class="prev-btn fa-solid fa-arrow-left fa-lg"></i>
+      </div>
+      <div class="img-popup w-10/12 md:w-[32rem] shadow-lg rounded overflow-hidden">
+        <div class="header-popup w-full h-56 md:h-72">
+        </div>
+        <div class="text-center p-2 md:p-5 rounded-tl-[3rem] w-full h-full bg-white relative">
+          <h4 class="capitalize font-semibold mb-2 md:mb-3.5">title right here</h4>
+          <p class="text-xs md:text-sm pb-2">Description about your stuff will be displayed right here with Text Align left text so it will be so beauty but you need to add more text to make it more readable~!</p>
+        </div>
+      </div>
+      <div class="text-white px-4 md:px-10">
+        <i class="next-btn fa-solid fa-arrow-right fa-lg"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
+<!-- <img src="https://source.unsplash.com/featured/600x300" alt=""> -->
